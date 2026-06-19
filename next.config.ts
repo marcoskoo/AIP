@@ -1,0 +1,14 @@
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  output: "standalone",
+  /* config options here */
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  reactStrictMode: false,
+  serverExternalPackages: ["@prisma/client", ".prisma/client"],
+  allowedDevOrigins: ["127.0.0.1", "http://127.0.0.1:3000"],
+};
+
+export default nextConfig;
