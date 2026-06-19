@@ -32,6 +32,11 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# Local SQLite database (dev only — production uses Neon PostgreSQL)
+db/*.db
+db/*.db-journal
 
 # vercel
 .vercel
